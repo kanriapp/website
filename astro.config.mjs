@@ -7,7 +7,7 @@ export default defineConfig({
 		starlight({
 			title: 'Kanri',
 			logo: {
-				light: '/src/assets/kanri_logo.svg',
+				light: '/src/assets/kanri_logo_light.svg',
 				dark: '/src/assets/kanri_logo.svg',
 				replacesTitle: false,
 			},
