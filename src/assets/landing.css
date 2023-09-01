@@ -1,0 +1,69 @@
+:root {
+	--accent-hsl: 222, 71%, 44%;
+	--overlay-blurple: hsla(var(--accent-hsl), 0.2);
+}
+
+:root[data-theme='light'] {
+	--accent-hsl: 255, 85%, 65%;
+}
+
+[data-has-hero] .page {
+	background:
+		radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 20rem 2rem /
+			140rem 80rem;
+}
+
+[data-has-hero] header {
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
+	-webkit-backdrop-filter: blur(16px);
+	backdrop-filter: blur(16px);
+}
+
+[data-has-hero] header site-search > button {
+	display: none !important;
+}
+
+[data-has-hero] .hero img {
+    position: absolute;
+    overflow: hidden;
+    top: 15vh;
+    width: 60%;
+    aspect-ratio: 16-9;
+}
+
+[data-has-hero] {
+    overflow-x: hidden;
+}
+
+[data-has-hero] .hero > div.sl-flex{
+    align-self: flex-start;
+}
+
+[data-has-hero] .sl-container {
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+[data-has-hero] .hero .action {
+    border-radius: 24px;
+}
+
+[data-has-hero] .hero .action.minimal {
+    border-radius: 24px;
+    border: solid 1px var(--sl-color-text-accent);
+    padding: 1rem 1.25rem;
+}
+
+[data-has-hero] .hero .actions {
+    gap: 1.25rem;
+}
+
+
+@media (max-width: 800px) {
+	[data-has-hero] img {
+        display: none;
+        background-color: rebeccapurple;
+        border: solid 100px var(--sl-color-text-accent);
+    }
+}
