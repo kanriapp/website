@@ -1,4 +1,4 @@
-# Starlight Starter Kit: Basics
+# Kanri website
 
 ```
 npm create astro@latest -- --template starlight
