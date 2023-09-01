@@ -6,13 +6,21 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Kanri',
+			logo: {
+				light: '/src/assets/kanri_logo.svg',
+				dark: '/src/assets/kanri_logo.svg',
+				replacesTitle: false,
+			},
 			social: {
 				github: 'https://github.com/trobonox/kanri',
 				discord: 'https://discord.gg/AVqHrvxB9C'
 			},
+			editLink: {
+				baseUrl: 'https://github.com/trobonox/kanri-website',
+			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting started',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', link: '/guides/example/' },
