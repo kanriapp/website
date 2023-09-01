@@ -23,7 +23,7 @@ export default defineConfig({
 					label: 'Getting started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'What is Kanri/', link: '/getting-started/what-is-kanri/' },
+						{ label: 'What is Kanri?', link: '/getting-started/what-is-kanri/' },
 					]
 				}
 			],
