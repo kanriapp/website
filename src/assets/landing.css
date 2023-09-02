@@ -59,9 +59,8 @@
     gap: 1.25rem;
 }
 
-
 @media (max-width: 800px) {
-	[data-has-hero] img {
+	[data-has-hero] .hero img {
         display: none;
         background-color: rebeccapurple;
         border: solid 100px var(--sl-color-text-accent);
