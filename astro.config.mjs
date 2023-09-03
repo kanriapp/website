@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 import solidJs from "@astrojs/solid-js";
 
-const site = "kanriapp.com"
+const site = "https://www.kanriapp.com/"
 
 // https://astro.build/config
 export default defineConfig({
