@@ -92,6 +92,30 @@
 
 [data-has-hero] .card {
     border-radius: 12px;
+    position: relative;
+    background: radial-gradient(300px circle at top left, rgba(85, 44, 190, 0.081) 20%, transparent 100%),
+                radial-gradient(300px circle at bottom right, rgba(44, 102, 190, 0.09) 20%, transparent 100%);
+}
+
+[data-has-hero] .card::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    transition: opacity 400ms ease 0s;
+    will-change: background, opacity;
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(62, 85, 167, 0.212),
+        transparent 40%
+    );
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+[data-has-hero] .card:hover::before {
+    opacity: 1;
 }
 
 @media (max-width: 50em) {

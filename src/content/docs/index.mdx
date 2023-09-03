@@ -17,6 +17,7 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { ScriptComp } from '../../components/ScriptComp'
 
 ## Why Kanri?
 
@@ -34,5 +35,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		All of your data is saved on your computer, respecting your privacy and allowing you to use the app with no internet connection.
 	</Card>
 </CardGrid>
+
+<ScriptComp client:only />
 
 Copyright (c) 2022 - 2023 trobonox (hello(at)trobo.tech)
