@@ -22,11 +22,33 @@ export default defineConfig({
     sidebar: [{
       label: 'Getting started',
       items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'What is Kanri?',
-        link: '/getting-started/what-is-kanri/'
-      }]
+        {
+          label: 'What is Kanri?',
+          link: '/getting-started/what-is-kanri/'
+        },
+        {
+          label: 'Frequently asked questions',
+          link: '/getting-started/faq'
+        }
+      ]
+    },
+    {
+      label: 'Guides',
+      items: [
+        {
+          label: 'Import boards from Trello®',
+          link: '/guides/import-from-trello/'
+        }
+      ]
+    },
+    {
+      label: 'Reference',
+      items: [
+        {
+          label: 'Troubleshooting',
+          link: '/reference/troubleshooting/'
+        }
+      ]
     }],
     customCss: ['./src/assets/landing.css']
   }), solidJs()],
