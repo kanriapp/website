@@ -19,7 +19,7 @@ export default defineConfig({
       discord: 'https://discord.gg/AVqHrvxB9C'
     },
     editLink: {
-      baseUrl: 'https://github.com/trobonox/kanri-website'
+      baseUrl: 'https://github.com/trobonox/kanri-website/tree/main'
     },
     sidebar: [{
       label: 'Getting started',
