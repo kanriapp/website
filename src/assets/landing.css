@@ -127,3 +127,14 @@
         display: flex !important;
     }
 }
+
+@media (min-width: 1700px) {
+    [data-has-hero] .hero img {
+        position: absolute;
+        overflow: hidden;
+        top: 10vh;
+        right: -10vw;
+        width: 55%;
+        aspect-ratio: 16-9;
+    }
+}
