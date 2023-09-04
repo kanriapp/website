@@ -118,6 +118,17 @@
     opacity: 1;
 }
 
+[data-has-hero] .star-text {
+    margin-top: 8px !important;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: wider;
+}
+
+[data-has-hero] footer {
+    margin-top: 80px !important;
+}
+
 @media (max-width: 50em) {
 	[data-has-hero] .hero img {
         display: none;
