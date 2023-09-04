@@ -134,7 +134,16 @@
         overflow: hidden;
         top: 10vh;
         right: -10vw;
-        width: 55%;
-        aspect-ratio: 16-9;
+        width: 1000px;
+    }
+}
+
+@media (min-width: 2400px) {
+    [data-has-hero] .hero img {
+        position: absolute;
+        overflow: hidden;
+        top: 6vh;
+        right: 0vw;
+        width: 1200px;
     }
 }
