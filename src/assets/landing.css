@@ -132,6 +132,7 @@
 @media (max-width: 50em) {
 	[data-has-hero] .hero img {
         display: none;
+        aspect-ratio: 1.74;
     }
 
     [data-has-hero] .header .right-group {
