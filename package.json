@@ -10,9 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.0.0",
     "@astrojs/solid-js": "^3.0.0",
     "@astrojs/starlight": "^0.8.1",
     "astro": "^2.10.5",
+    "astro-robots-txt": "^1.0.0",
     "sharp": "^0.32.3",
     "solid-js": "^1.4.3"
   }

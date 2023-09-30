@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
 import solidJs from "@astrojs/solid-js";
+import robotsTxt from "astro-robots-txt";
+import sitemap from "@astrojs/sitemap";
+const site = "https://www.kanriapp.com/";
 
-const site = "https://www.kanriapp.com/"
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://www.kanriapp.com/",
   integrations: [starlight({
     title: 'Kanri',
     logo: {
@@ -23,47 +25,41 @@ export default defineConfig({
     },
     sidebar: [{
       label: 'Getting started',
-      items: [
-        {
-          label: 'What is Kanri?',
-          link: '/getting-started/what-is-kanri/'
-        },
-        {
-          label: 'Frequently asked questions',
-          link: '/getting-started/faq'
-        }
-      ]
-    },
-    {
+      items: [{
+        label: 'What is Kanri?',
+        link: '/getting-started/what-is-kanri/'
+      }, {
+        label: 'Frequently asked questions',
+        link: '/getting-started/faq'
+      }]
+    }, {
       label: 'Guides',
-      items: [
-        {
-          label: 'Import boards from Trello®',
-          link: '/guides/import-from-trello/'
-        }
-      ]
-    },
-    {
+      items: [{
+        label: 'Import boards from Trello®',
+        link: '/guides/import-from-trello/'
+      }]
+    }, {
       label: 'Reference',
-      items: [
-        {
-          label: 'Troubleshooting',
-          link: '/reference/troubleshooting/'
-        }
-      ]
+      items: [{
+        label: 'Troubleshooting',
+        link: '/reference/troubleshooting/'
+      }]
     }],
-    head: [
-      {
-        tag: 'meta',
-        attrs: { property: 'og:image', content: site + 'og.jpg?v=1' },
-      },
-      {
-        tag: 'meta',
-        attrs: { property: 'twitter:image', content: site + 'og.jpg?v=1' },
-      },
-    ],
+    head: [{
+      tag: 'meta',
+      attrs: {
+        property: 'og:image',
+        content: site + 'og.jpg?v=1'
+      }
+    }, {
+      tag: 'meta',
+      attrs: {
+        property: 'twitter:image',
+        content: site + 'og.jpg?v=1'
+      }
+    }],
     customCss: ['./src/assets/landing.css']
-  }), solidJs()],
+  }), solidJs(), robotsTxt(), sitemap()],
   // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
   image: {
     service: {
