@@ -133,6 +133,7 @@
 	[data-has-hero] .hero img {
         display: none;
         aspect-ratio: 1.74;
+        width: 10px;
     }
 
     [data-has-hero] .header .right-group {
