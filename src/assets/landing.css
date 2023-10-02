@@ -125,6 +125,14 @@
     letter-spacing: wider;
 }
 
+h2#the-main-features-behind-kanri-extended-description{
+    margin-top: 24px;
+}
+
+hr {
+    margin-top: 96px;
+}
+
 [data-has-hero] footer {
     margin-top: 80px !important;
 }
