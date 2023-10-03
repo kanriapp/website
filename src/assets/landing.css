@@ -4,6 +4,7 @@
     --overlay-purple: #9e33d07b 20%;
     --sl-color-text-accent: #3460c6;
     --sl-color-text-accent-darker: #1a51d3;
+    --color-bg-elevation: hsl(224, 10%, 13%);
 }
 
 :root[data-theme='light'] {
@@ -12,6 +13,7 @@
     --overlay-purple: #357de1c0 20%;
     --sl-color-text-accent: #2458d1;
     --sl-color-text-accent-darker: #1947b0;
+    --color-bg-elevation: hsl(0, 0%, 93%);
 }
 
 [data-has-hero] .page {
@@ -130,7 +132,7 @@
 }
 
 .star-section {
-    background-color: hsl(231, 11%, 12%);
+    background-color: var(--color-bg-elevation);
     padding: 64px 12px;
     margin: 64px 0;
     text-align: center;
@@ -165,17 +167,17 @@
 
 .kanban-info-card {
     padding: 24px;
-    background: hsl(231, 11%, 12%);
-    border: 1px solid hsl(232, 12%, 24%);
+    background: var(--color-bg-elevation);
+    border: 1px solid var(--sl-color-gray-5);
     margin: 0 !important;
     border-radius: 12px;
-    color: #eeeeee;
+    color: var(--sl-color-gray-1);
 }
 
 .kanban-info-card > span {
     font-size: 24px;
     font-weight: bold;
-    color: #fefefe;
+    color: var(--sl-color-white);
 }
 
 [data-has-hero] footer {
