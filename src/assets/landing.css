@@ -161,7 +161,7 @@
 .kanban-cards-row {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-gap: 20px;
 }
 
