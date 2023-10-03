@@ -130,7 +130,7 @@
 }
 
 .star-section {
-    background-color: hsl(229, 12%, 18%);
+    background-color: hsl(231, 11%, 12%);
     padding: 64px 12px;
     margin: 64px 0;
     text-align: center;
@@ -165,7 +165,8 @@
 
 .kanban-info-card {
     padding: 24px;
-    background: hsl(229, 12%, 18%);
+    background: hsl(231, 11%, 12%);
+    border: 1px solid hsl(232, 12%, 24%);
     margin: 0 !important;
     border-radius: 12px;
 }
