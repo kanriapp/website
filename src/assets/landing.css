@@ -169,6 +169,7 @@
     border: 1px solid hsl(232, 12%, 24%);
     margin: 0 !important;
     border-radius: 12px;
+    color: #eeeeee;
 }
 
 .kanban-info-card > span {
