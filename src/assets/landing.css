@@ -2,7 +2,7 @@
 	--accent-hsl: 222, 71%, 44%;
 	--overlay-blurple: hsla(var(--accent-hsl), 0.2);
     --overlay-purple: #9e33d07b 20%;
-    --sl-color-text-accent: #4d7dee;
+    --sl-color-text-accent: #3460c6;
     --sl-color-text-accent-darker: #1a51d3;
 }
 
@@ -125,12 +125,55 @@
     letter-spacing: wider;
 }
 
-h2#the-main-features-behind-kanri-extended-description{
-    margin-top: 24px;
+.card-grid.stagger {
+    margin-bottom: 64px;
 }
 
-hr {
-    margin-top: 96px;
+.star-section {
+    background-color: hsl(229, 12%, 18%);
+    padding: 64px 12px;
+    margin: 64px 0;
+    text-align: center;
+}
+
+.star-section > p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.star-section > a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: var(--sl-color-text-accent);
+    border-radius: 24px;
+    color: #fefefe;
+    font-weight: bold;
+    transition: background-color ease-in-out 0.25s;
+    text-decoration: none;
+}
+
+.star-section > a:hover {
+    background: var(--sl-color-text-accent-darker);
+}
+
+.kanban-cards-row {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.kanban-info-card {
+    padding: 24px;
+    background: hsl(229, 12%, 18%);
+    margin: 0 !important;
+    border-radius: 12px;
+}
+
+.kanban-info-card > span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fefefe;
 }
 
 [data-has-hero] footer {

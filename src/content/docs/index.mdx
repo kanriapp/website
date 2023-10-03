@@ -17,70 +17,57 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
-import { ScriptComp } from '../../components/ScriptComp'
+import { ScriptComp } from '../../components/ScriptComp';
+import { StarSection } from '../../components/StarSection';
+import { ExtraDescription } from '../../components/ExtraDescription';
 
 ## Benefits of using Kanri
 
 <CardGrid stagger>
 	<Card title="Open source" icon="open-book">
-		Kanri is free and open source, providing absolute transparency and allowing you to contribute to the evolution of the project.
+		Kanri is free and open source (FOSS), which means it's not only free to use but also completely transparent. You can see the code, contribute to its development, and be part of its evolution.
 	</Card>
 	<Card title="Highly customizable" icon="pencil">
-		Tailor your Kanban boards to your unique needs with custom themes and backgrounds, giving you complete control over your workspace.
+		Tailor your Kanban boards to your unique style with custom themes and backgrounds. The Kanri app provides a level of customization which ensures that your workspace is not just functional but also visually appealing.
 	</Card>
 	<Card title="With power users in mind" icon="laptop">
-		Kanri provides keyboard shortcuts for quick board navigation, export features for backing up data and imports from previous Kanri backups or other apps like Trello®.
+		Kanri understands the needs of power users. It offers convenient keyboard shortcuts for swift board navigation, export capabilities for data backups, and even allows you to import data from previous Kanri backups or other popular apps like Trello™.
 	</Card>
 	<Card title="Offline-first" icon="document">
-		All of your data is saved on your computer, respecting your privacy and allowing you to use the app with no internet connection.
+		Your data stays on your computer, respecting your privacy and enabling you to use the app even without an internet connection. This offline-first design ensures that you're always in control of your data.
 	</Card>
 </CardGrid>
 
-## Like what you're seeing?
+<StarSection />
 
-<span class="star-text">Please [leave a star 🌟 on GitHub.](https://github.com/trobonox/kanri) This is a side-project that does not make any profit so this is the primary way to support development!</span>
+<ExtraDescription />
 
-<hr/>
+### Robust tech stack
+Kanri is based on a strong tech stack that consists of:
 
-## The main features behind Kanri (extended description)
+- **Tauri:** By utilizing Tauri's strength, Kanri makes sure that offline functionality is flawless on Windows, macOS, and Linux.
+- **Nuxt.js v3:** Kanri makes use of Nuxt.js v3's performance and adaptability to give you a responsive and user-friendly interface.
+- **Tailwind CSS:** Thanks to the use of TailwindCSS, the app has a sleek design that makes it both aesthetically beautiful and practical.
 
-Looking for the perfect Kanban board app to streamline your tasks and boost productivity? Look no further! Kanri is the answer you've been searching for. Kanri is a free and open-source Kanban board application designed to cater to your personal needs, making it ideal for solo developers, students, and anyone seeking a well-organized task management solution.
-
-### Key Features:
-
-- **Open Source Freedom:** Kanri is open source, which means it's not only free but also transparent. You can see the code, contribute to its development, and be part of its evolution.
-- **Highly Customizable:** Tailor your Kanban boards to your unique style with custom themes and backgrounds. This level of customization ensures that your workspace is not just functional but also visually appealing.
-- **Designed for Power Users:** Kanri understands the needs of power users. It offers convenient keyboard shortcuts for swift board navigation, export capabilities for data backups, and even allows you to import data from previous Kanri backups or other popular apps like Trello®.
-- **Offline-First Approach:** Your data stays on your computer, respecting your privacy and enabling you to use the app even without an internet connection. This offline-first design ensures that you're always in control of your data.
-
-### Tech Stack:
-
-Kanri is built on a robust tech stack that includes:
-
-- **Tauri:** Leveraging the power of Tauri, Kanri ensures seamless offline functionality across Windows, macOS, and Linux.
-- **Nuxt.js v3:** Kanri benefits from the versatility and performance of Nuxt.js v3 to provide you with a responsive and user-friendly interface.
-- **TailwindCSS:** The app boasts a sleek and modern design thanks to the use of TailwindCSS, making it both aesthetically pleasing and highly functional.
-
-Whether you're a solo developer managing projects, a student juggling assignments, or simply someone who wants a hassle-free way to organize tasks, Kanri is here to make your life easier.
+### Import and export
+Kanri allows you to make backups of individual boards or all of your data at once. You can use this to make sure your data stays safe or transfer it to another device. Furthermore, you can import data from KanbanElectron or Trello™.
 
 ### The Kanri philosophy
+Kanri's guiding principles include simplicity, privacy, and a sincere desire to improve user experience. We are convinced that a great productivity tool should provide you control while maintaining your privacy and not overwhelm you with features. What distinguishes the Kanri philosophy is as follows:
 
-At Kanri, our philosophy is rooted in simplicity, privacy, and a genuine commitment to enhancing the user experience. We firmly believe that a great productivity tool should empower you without sacrificing your privacy or overwhelming you with unnecessary features. Here's what sets the Kanri philosophy apart:
+1. **Offline First**: We appreciate the need for you to have access to your assignments and projects even when you're not connected to the internet. Your productivity won't ever be jeopardized by connectivity troubles because to Kanri's ability to operate without an internet connection.
 
-1. **Offline First:** We understand the importance of having access to your tasks and projects even when you're offline. Kanri is designed to work seamlessly without an internet connection, ensuring that your productivity is never compromised by connectivity issues.
+2. **Privacy-focused:** Your data is valuable, and we recognize this. Kanri protects your privacy by just saving information on your smartphone. You may rest easy knowing that we don't track your usage or collect any personal information.
 
-2. **Privacy-Centric:** Your data is precious, and we respect that. Kanri keeps your information private by storing it solely on your device. We don't collect any personal data or track your usage, giving you complete peace of mind.
+3. **Simplicity:** We think that simplicity has a certain beauty. Task management is a breeze with Kanri's simple and clear UI. We make an effort to achieve the ideal balance between offering essential functionality and preventing excessive complexity or bloat.
 
-3. **Balanced Simplicity:** We believe in the beauty of simplicity. Kanri offers a clean and intuitive interface that makes task management a breeze. We strive to strike the perfect balance between providing essential features and avoiding unnecessary complexity or bloat.
+4. **User Experience**: The design of Kanri is centered on the user experience. We make an effort to invest in intelligent design and user-friendly interactions because we want you to enjoy using the app. Kanri is easy to use, making it available to users of all skill levels.
 
-4. **Thoughtful User Experience:** User experience is at the core of Kanri's design. We want you to enjoy using the app, which is why we invest in thoughtful design and user-friendly interactions. Navigating Kanri is simple, making it accessible to users of all levels of expertise.
+5. **Minimalist Approach**: We give priority to features that actually increase efficiency for you. We don't believe in overstuffing the user interface with unnecessary niceties.  Instead, we carefully choose the elements that are most important to our consumers to keep Kanri effective and simple to use.
 
-5. **Minimalistic Approach:** We prioritize essential features that genuinely enhance your productivity. We're not about cluttering the interface with countless bells and whistles. Instead, we carefully select features that matter most to our users, ensuring that Kanri remains efficient and easy to use.
+Digital tools are frequently accompanied by intrusive tracking and needless complexity in today's environment, but Kanri is an alternative to that. Kanri will always have the goal of keeping everything offline, private, and user-focused. Being productive should be all about you, your work, and the smooth flow of things. Kanri helps you achieve that goal.
 
-In a world where digital tools often come with invasive tracking and unnecessary complexity, Kanri stands out as a refreshing alternative. Our commitment to keeping it offline, private, and user-focused is unwavering. We believe that productivity should be about you, your tasks, and the seamless flow of work. Kanri is here to support that vision.
-
-### The future of Kanri
-
+### The future of Kanri (Roadmap)
 The Kanri project has a clear roadmap and vision for the future, with a focus on improving functionality, user experience, and overall efficiency. Here's a summarized outlook on the project's upcoming developments:
 
 Long term vision for the project:
@@ -89,23 +76,23 @@ Long term vision for the project:
 - 🚚 Work towards 1.0 release with features from the backlog like internationalization or a widget panel
 - 🔍 After 1.0: Possibility of cloud sync with collaboration (could be self-hosted or managed by me)
 
-A granular list of priorities can be found in the [roadmap in the projects tab of the GitHub repo](https://github.com).
+A granular list of priorities can be found in the [roadmap in the projects tab of the GitHub repo](https://github.com/users/trobonox/projects/1).
 
 This software is open for any contributions or feature requests, though always keep in mind that I am still a student with limited time and I might not be able to process every request immediately.
 
-
 ### Behind the Kanri name
+The name "Kanri" is a fusion of various inspirations, each contributing to the purpose and ideas behind the app. It embodies a multifaceted concept that combines both technological and organizational elements.
+- **Kanban + Tauri:** The first part of the name, "Kan," draws its inspiration from "Kanban," a productivity method which originated in Japan that emphasizes visualizing workflow and improving efficiency using concepts like boards, columns and cards. Just as Kanban boards help teams streamline their processes, Kanri empowers personal users to manage their tasks easily and effectively. The "ri" at the end of our name is a reference to "Tauri," the underlying framework built in Rust that makes Kanri's offline capabilities possible and bundles it as a Desktop app for Windows, Linux and macOS. Combined, the name "Kanri" signifies a powerful combination of traditional productivity principles and modern technologies such as Rust.
+- **Japanese Term "Kanri":** Aside from its connection to Kanban and Tauri, the name "Kanri" is also inspired by the Japanese term "Kanri," which translates to "management" or "control." In the context of our application, "Kanri" represents your ability to take control of your tasks, projects, and workflow, all within a highly manageable and efficient system.
+- **Hoshin Kanri Planning Method:** Additionally, "Kanri" finds inspiration in the "Hoshin Kanri" planning method, which is a strategic planning process from Japan. Hoshin Kanri emphasizes alignment of organizational goals and continuous improvement. In a similar way, Kanri encourages users to set clear objectives, prioritize tasks, and work towards their goals methodically.
 
-The name "Kanri" is a harmonious fusion of various inspirations, each contributing to the essence and purpose of our application. It embodies a multifaceted concept that combines both technological and organizational elements.
+In essence, the name "Kanri" symbolizes a holistic approach to productivity. It merges the rock-solid framework of Kanban and the innovation of Tauri with the principles of efficient management and strategic planning found in Japanese practices. Kanri, our Kanban board application, is not just a tool; it's a philosophy that empowers users to take control of their work, plan strategically, and achieve their goals efficiently.
 
-**Kanban + Tauri:** The first part of the name, "Kan," draws its inspiration from "Kanban," a renowned Japanese productivity method that emphasizes visualizing workflow and improving efficiency. Just as Kanban boards help teams streamline their processes, Kanri empowers users to manage their tasks effectively. The "ri" at the end of our name pays tribute to "Tauri," the underlying technology that makes Kanri's offline capabilities possible. Together, "Kanri" signifies a powerful combination of traditional productivity principles and cutting-edge technology.
-
-**Japanese Term "Kanri":** Beyond its connection to Kanban and Tauri, the name "Kanri" also draws inspiration from the Japanese term "Kanri," which translates to "management" or "control." In the context of our application, "Kanri" represents your ability to take control of your tasks, projects, and workflow, all within a highly manageable and efficient system.
-
-**Hoshin Kanri Planning Method:** Additionally, "Kanri" finds inspiration in the "Hoshin Kanri" planning method, which is a strategic planning process used in many Japanese organizations. Hoshin Kanri emphasizes alignment of organizational goals and continuous improvement. In a similar spirit, Kanri encourages users to set clear objectives, prioritize tasks, and work towards their goals methodically.
-
-In essence, the name "Kanri" symbolizes a holistic approach to productivity. It merges the wisdom of Kanban and the innovation of Tauri with the principles of efficient management and strategic planning found in Japanese practices. Kanri, our Kanban board application, is not just a tool; it's a philosophy that empowers users to take control of their work, plan strategically, and achieve their goals efficiently.
-
+## About the creator
+Hi, [I'm Trobo (also known as Trobonox)](https://trobo.tech) and I'm a passionate hobbyist developer from Bavaria, South Germany. 
+I have built this project as I am a huge fan of Kanban and have extensively used other tools before, but did not find an offline app which suited my needs of storing confidential data locally on my Windows desktop PC. This was re-enforced by someone on a Discord community requesting this exact app after seeing my previous work on a Kanban web app, so that's how its previous version, [Kanban Electron (kanban-electron)](https://github.com/trobonox/kanban-electron) was born.
+Since then, I have rewritten the app to use Tauri and have been developing new features and improvements ever since. 
+I am very grateful for the interest everyone has shown in my passion project and hope to provide a great and useful offline Kanban app to many people.
 
 <ScriptComp client:only />
 
