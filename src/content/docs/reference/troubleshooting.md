@@ -25,4 +25,4 @@ You might need to enable the option to show hidden files to be able to see the f
 
 Delete this file and on the next start, the application should be working as usual. If you want to have a copy of your data saved, you can also create a copy of .kanri.dat.
 
-**All of your data should be safe, only your board background images might stop working**.
+**All of your data should be safe, only your board background images might disappear until you add them back.**

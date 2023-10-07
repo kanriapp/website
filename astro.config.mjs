@@ -37,6 +37,10 @@ export default defineConfig({
       items: [{
         label: 'Import boards from Trello®',
         link: '/guides/import-from-trello/'
+      },
+      {
+        label: 'Keyboard & click shortcuts',
+        link: '/guides/shortcuts/'
       }]
     }, {
       label: 'Reference',
