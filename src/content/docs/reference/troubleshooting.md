@@ -8,7 +8,20 @@ If you do not find the bug or issue you encounter in this list, you can open an 
 
 Furthermore, it is generally advised to regulary export your data from the import/export menu as a backup to prevent data loss.
 
+**All of your data should be safe, only your board background images might disappear until you add them back.**
+
+## Custom board background disappeared
+
+Your background disappearing is not an uncommon issue, so don't worry. The fix is just resetting your background and adding it again.
+
+If you are interested, here are the causes why this can happen:
+- **Update from older version:** When updating from 0.5.1 to 0.6, a change in the underlying code unfortunately breaks existing backgrounds. 
+- **Background image path is different:** If you moved or renamed the background image, Kanri does not know about it anymore. This is because Kanri only has access to the files you give it to and does not actively track them.
+- **Board imported from another device:** If you imported a board from another device, Kanri cannot find the file since the path is different (see explanation above).
+
 ## App is taking a lot of time to load/slowing down and using a lot of RAM
+
+**Please note:** This issue should be mitigated starting from version 0.6. If you still encounter this, please contact support@kanriapp.com.
 
 If your app is very slow to start and uses very big amounts of ram, don't worry! You have encountered a rare issue which is easy to fix.
 
@@ -24,5 +37,3 @@ macOS: ${HOME}/Library/Application Support/tech.trobonox.kanri/
 You might need to enable the option to show hidden files to be able to see the file.
 
 Delete this file and on the next start, the application should be working as usual. If you want to have a copy of your data saved, you can also create a copy of .kanri.dat.
-
-**All of your data should be safe, only your board background images might disappear until you add them back.**
