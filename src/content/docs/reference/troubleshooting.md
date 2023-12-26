@@ -15,13 +15,13 @@ Furthermore, it is generally advised to regulary export your data from the impor
 Your background disappearing is not an uncommon issue, so don't worry. The fix is just resetting your background and adding it again.
 
 If you are interested, here are the causes why this can happen:
-- **Update from older version:** When updating from 0.5.1 to 0.6 (coming soon), a change in the underlying code unfortunately breaks existing backgrounds. 
+- **Update from older version:** When updating from 0.5.1 to 0.6, a change in the underlying code might break existing backgrounds. 
 - **Background image path is different:** If you moved or renamed the background image, Kanri does not know about it anymore. This is because Kanri only has access to the files you give it to and does not actively track them.
 - **Board imported from another device:** If you imported a board from another device, Kanri cannot find the file since the path is different (see explanation above).
 
 ## App is taking a lot of time to load/slowing down and using a lot of RAM
 
-**Please note:** This issue should be mitigated starting from version 0.6 (coming soon). If you still encounter this, please contact support@kanriapp.com.
+**Please note:** This issue should be mitigated starting from version 0.6. If you still encounter this, please contact support@kanriapp.com.
 
 If your app is very slow to start and uses very big amounts of ram, don't worry! You have encountered a rare issue which is easy to fix.
 
