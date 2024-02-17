@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [starlight({
     title: 'Kanri',
     logo: {
-      light: '/src/assets/kanri_logo_light.svg',
+      light: '/src/assets/kanri_logo.svg',
       dark: '/src/assets/kanri_logo.svg',
       replacesTitle: false
     },

@@ -2,9 +2,12 @@
 	--accent-hsl: 222, 71%, 44%;
 	--overlay-blurple: hsla(var(--accent-hsl), 0.2);
     --overlay-purple: #9e33d07b 20%;
-    --sl-color-text-accent: #3460c6;
-    --sl-color-text-accent-darker: #1a51d3;
-    --color-bg-elevation: hsl(224, 10%, 13%);
+    --sl-color-text-accent: #30519f;
+    --sl-color-text-accent-darker: #143b95;
+    --color-bg-elevation: #1b1b1d;
+    --sl-color-black: #111112;
+    --sl-color-gray-6: #1b1b1d;
+    --sl-color-text-invert: #f1f5f9;
 }
 
 :root[data-theme='light'] {
@@ -13,12 +16,15 @@
     --overlay-purple: #357de1c0 20%;
     --sl-color-text-accent: #2458d1;
     --sl-color-text-accent-darker: #1947b0;
-    --color-bg-elevation: hsl(0, 0%, 93%);
+    --color-bg-elevation: #e7e7e7;
+    --sl-color-black: #f0eff3;
+    --sl-color-gray-6: #d8d8d8;
+    --sl-color-gray-7: #eeeeee;
 }
 
 [data-has-hero] .page {
 	background:
-		radial-gradient(var(--overlay-purple), var(--overlay-blurple), transparent 65%) no-repeat 40rem -15rem /
+		radial-gradient(#09129bb1, #2551ff2b, transparent 60%) no-repeat 25rem -8rem /
 			140rem 80rem;
 }
 
@@ -95,8 +101,7 @@
 [data-has-hero] .card {
     border-radius: 12px;
     position: relative;
-    background: radial-gradient(300px circle at top left, rgba(85, 44, 190, 0.081) 20%, transparent 100%),
-                radial-gradient(300px circle at bottom right, rgba(44, 102, 190, 0.09) 20%, transparent 100%);
+    background: var(--color-bg-elevation);
 }
 
 [data-has-hero] .card::before {
@@ -108,7 +113,7 @@
     will-change: background, opacity;
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(62, 85, 167, 0.212),
+        rgba(91, 106, 159, 0.212),
         transparent 40%
     );
     opacity: 0;
@@ -203,6 +208,10 @@
         top: 10vh;
         right: -10vw;
         width: 1000px;
+    }
+
+    [data-has-hero] header {
+        padding: 0px 86px;
     }
 }
 
