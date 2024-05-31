@@ -8,8 +8,6 @@ If you do not find the bug or issue you encounter in this list, you can open an 
 
 Furthermore, it is generally advised to regulary export your data from the import/export menu as a backup to prevent data loss.
 
-**All of your data should be safe, only your board background images might disappear until you add them back.**
-
 ## Custom board background disappeared
 
 Your background disappearing is not an uncommon issue, so don't worry. The fix is just resetting your background and adding it again.
