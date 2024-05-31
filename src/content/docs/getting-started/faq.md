@@ -9,7 +9,7 @@ The app is built by a solo developer in their free time, which means that progre
 
 ## Where is my data saved? Can I change the location?
 Under the hood, Kanri uses `tauri-plugin-store` to store all data in a local JSON file.
-These are the respective locations for each operating system
+These are the respective locations for each operating system:
 ```
 Windows: %appdata%\tech.trobonox.kanri\.kanri.dat
 Linux: /home/USER/.local/share/tech.trobonox.kanri/.kanri.dat
