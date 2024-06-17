@@ -12,6 +12,7 @@ Kanri imports the board including all columns and cards, including the descripti
 - Activities on cards
 - Attachments on cards 
 - Any other additional card and board properties
+  
 Please keep in mind that Kanri is still in active development and many features are on their way.
 
 ## Export your board in JSON-format
