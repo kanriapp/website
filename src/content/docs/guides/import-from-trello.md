@@ -3,18 +3,16 @@ title: Import boards from Trello™
 description: A guide for importing boards from Trello™.
 ---
 
-# Import boards from Trello™
-Importing boards from Trello™ to Kanri is pretty easy. Just follow this step-by-step guide to copy all boards with just a few clicks.
+Importing boards from Trello™ to Kanri is pretty easy. Just follow this step-by-step guide to import a board with just a few clicks.
 
 ## What does Kanri import?
-Kanri imports the board including all columns and cards, including the description of each card.
+Kanri imports the board including all columns and cards, including the description, sub-tasks, due date and tags of each card.
 
 ## What does Kanri NOT import?
-    • Due-dates on cards => work in progress
-    • Activities on cards => Planned for future release
-    • Attachments on cards => Planned for future release
-
-Please keep in mind that Kanri is in a beta-stadium at the moment and many features are on their way.
+- Activities on cards
+- Attachments on cards 
+- Any other additional card and board properties
+Please keep in mind that Kanri is still in active development and many features are on their way.
 
 ## Export your board in JSON-format
 Open Trello and go to your board. On the top-right, you see the menu:
