@@ -20,5 +20,5 @@ These are either (double-)click shortcuts or keyboard shortcuts.
 - Ctrl/Command + D - Delete last column in board view
 - Ctrl/Command + T - Edit title of last column in board view
 - Ctrl/Command + N - Create new card inside last column in board view
-- Ctrl/Command + Arrow Keys Left and right - Switch columns for title editing and card adding
+- Ctrl/Command + Alt + Arrow Keys Left and right - Switch columns for title editing and card adding
 - Ctrl/Command + Plus or minus Keys Increase/decrease board column zoom (global preference)
