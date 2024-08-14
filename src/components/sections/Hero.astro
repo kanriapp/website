@@ -6,9 +6,9 @@ import { motion } from "framer-motion"
 ---
 
 
-<div class="w-full flex-col items-center justify-center flex pt-20 lg:pt-32 relative z-10">
+<div class="w-full flex-col items-start md:items-center justify-center flex pt-20 lg:pt-32 relative z-10 px-4 md:px-0">
     <motion.div
-        className="text-[4.25rem] font-bold tracking-tight mb-2"
+        className="text-5xl lg:text-[4.25rem] font-bold tracking-tight mb-2 mt-12 lg:mt-0"
         initial={{ y: -25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -17,7 +17,7 @@ import { motion } from "framer-motion"
         Simplicity in Every Task.
     </motion.div>
     <motion.p
-        className="text-gray-400 text-xl max-w-2xl inline-block text-center"
+        className="text-gray-400 text-lg lg:text-xl max-w-xl lg:max-w-2xl inline-block text-left md:text-center"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
@@ -27,8 +27,7 @@ import { motion } from "framer-motion"
     </motion.p>
 
     <motion.div
-        className="flex flex-row items-center gap-6"
-        className="text-gray-400 text-xl"
+        className="flex flex-row items-center gap-2"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
@@ -38,7 +37,7 @@ import { motion } from "framer-motion"
             <Icon class="size-4 mr-2" name="lucide:download" />
             <span class="font-bold">Download for Mac</span>
         </Button>
-        <Button variant="secondary" size="lg" className="mt-10 ml-1">
+        <Button variant="secondary" size="lg" className="hidden lg:flex mt-10 ml-1">
             <Icon class="size-4 mr-2" name="lucide:book" />
             Read Docs
         </Button>
@@ -55,7 +54,7 @@ import { motion } from "framer-motion"
 />
 
 <motion.div
-    className="hidden md:flex justify-center relative overflow-hidden mt-32"
+    className="hidden md:flex justify-center relative overflow-hidden mt-24 lg:mt-32"
     initial={{ y: 50, opacity: 0, zIndex: 20 }}
     animate={{ y: 0, opacity: 1, zIndex: 20 }}
     transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}
