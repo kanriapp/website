@@ -1,14 +1,16 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import solidJs from "@astrojs/solid-js";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
+import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
+import icon from "astro-icon";
 const site = "https://www.kanriapp.com/";
 
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.kanriapp.com/",
+  site,
   integrations: [starlight({
     title: 'Kanri',
     logo: {
@@ -37,8 +39,7 @@ export default defineConfig({
       items: [{
         label: 'Import boards from Trello®',
         link: '/guides/import-from-trello/'
-      },
-      {
+      }, {
         label: 'Keyboard & click shortcuts',
         link: '/guides/shortcuts/'
       }]
@@ -63,7 +64,7 @@ export default defineConfig({
       }
     }],
     customCss: ['./src/assets/landing.css']
-  }), solidJs(), robotsTxt(), sitemap()],
+  }), robotsTxt(), sitemap(), react(), tailwind({applyBaseStyles: false}), icon()],
   // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
   image: {
     service: {
