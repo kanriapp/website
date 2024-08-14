@@ -10,12 +10,36 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.5",
-    "@astrojs/solid-js": "^4.3.0",
     "@astrojs/starlight": "^0.24.2",
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/lucide": "^1.1.206",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "astro": "^4.10.2",
+    "astro-icon": "^1.1.0",
     "astro-robots-txt": "^1.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.24",
+    "lucide-react": "^0.427.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sharp": "^0.32.3",
-    "solid-js": "^1.4.3"
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss": "^3.4.9",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "overrides": {
+    "astro-icon": {
+      "@iconify/tools": "^4.0.0"
+    }
+  },
+  "pnpm": {
+    "overrides": {
+      "@iconify/tools": "^4.0.5"
+    }
   }
 }

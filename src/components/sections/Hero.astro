@@ -1,0 +1,70 @@
+---
+import Particles from "@/components/magicui/particles"
+import { Button } from "@/components/ui/button"
+import { Icon } from "astro-icon/components"
+import { motion, stagger } from "framer-motion"
+---
+
+<div class="w-full flex-col items-center justify-center flex pt-20 lg:pt-32 relative z-10">
+    <motion.div 
+        className="text-[4.25rem] font-bold tracking-tight mb-4"
+        initial={{ y: -25, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        client:load
+    >
+        Simplicity in Every Task.
+    </motion.div>
+    <motion.p 
+        className="text-gray-400 text-xl max-w-2xl inline-block text-center" 
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+        client:load
+    >
+        Kanri is a modern, minimalist Kanban board that works offline — no setup or self-hosting needed, just pure productivity.
+    </motion.p>
+
+    <motion.div
+        className="flex flex-row items-center gap-6"
+        className="text-gray-400 text-xl" 
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
+        client:load
+    >
+        <Button variant="default" size="lg" className="mt-10 mr-1">
+            <Icon class="size-4 mr-2" name="lucide:download" />
+            <span class="font-bold">Download for Mac</span>
+        </Button>
+        <Button variant="secondary" size="lg" className="mt-10 ml-1">
+            <Icon class="size-4 mr-2" name="lucide:book" />
+            Read Docs
+        </Button>
+    </motion.div>
+</div>
+
+<Particles
+    className="absolute inset-0 top-0 left-0 pointer-events-none"
+    quantity={80}
+    ease={70}
+    color="#ffffff"
+    refresh
+    client:load
+/>
+
+<motion.div
+    className="hidden md:flex justify-center relative overflow-hidden mt-32"
+    initial={{ y: 50, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 1.2, ease: "easeInOut", delay: 0.55 }}
+    client:load
+>
+    <img 
+        src="./kanri_board_screenshot.png" 
+        alt="Screenshot showcasing a Kanri Kanban board example with cards, columns, custom background image, custom card colors, tags, sub-tasks and due dates"
+        class="w-[75%] h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-background from-12%" />
+<motion.div>
+
