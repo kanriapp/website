@@ -5,13 +5,12 @@ import { Icon } from "astro-icon/components"
 import { motion } from "framer-motion"
 ---
 
-
 <div class="w-full flex-col items-start md:items-center justify-center flex pt-20 lg:pt-32 relative z-10 px-4 md:px-0">
     <motion.div
-        className="text-5xl lg:text-[4.25rem] font-bold tracking-tight mb-2 mt-12 lg:mt-0"
+        className="text-5xl lg:text-[4.25rem] font-bold tracking-tight mb-4 mt-12 lg:mt-0"
         initial={{ y: -25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         client:load
     >
         Simplicity in Every Task.
@@ -20,7 +19,7 @@ import { motion } from "framer-motion"
         className="text-gray-400 text-lg lg:text-xl max-w-xl lg:max-w-2xl inline-block text-left md:text-center"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
         client:load
     >
         Kanri is a modern, minimalist Kanban board that works offline — no setup or self-hosting needed, just pure productivity.
@@ -30,7 +29,7 @@ import { motion } from "framer-motion"
         className="flex flex-row items-center gap-2"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         client:load
     >
         <Button variant="default" size="lg" className="mt-10 mr-1">
@@ -45,7 +44,7 @@ import { motion } from "framer-motion"
 </div>
 
 <Particles
-    className="absolute inset-0 top-0 left-0 pointer-events-none"
+    className="absolute inset-0 top-0 left-0 pointer-events-none h-screen"
     quantity={80}
     ease={70}
     color="#ffffff"
@@ -54,19 +53,25 @@ import { motion } from "framer-motion"
 />
 
 <motion.div
-    className="hidden md:flex justify-center relative overflow-hidden mt-24 lg:mt-32"
-    initial={{ y: 50, opacity: 0, zIndex: 20 }}
-    animate={{ y: 0, opacity: 1, zIndex: 20 }}
-    transition={{ duration: 1.2, ease: "easeInOut", delay: 0.5 }}
+    className="hidden md:flex justify-center relative overflow-hidden pt-24 lg:pt-32"
+    initial={{ y: 50, opacity: 0, zIndex: 30 }}
+    animate={{ y: 0, opacity: 1, zIndex: 30 }}
+    transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
     client:load
 >
     <img
         src="./kanri_board_screenshot.png"
         alt="Screenshot showcasing a Kanri Kanban board example with cards, columns, custom background image, custom card colors, tags, sub-tasks and due dates"
-        class="w-[75%] h-full object-cover"
+        class="w-[75%] h-full object-cover relative"
     />
 
-    <div class="absolute inset-0 bg-gradient-to-t from-background from-30% z-30" />
-<motion.div>
-
-
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.6 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+      client:load
+      className="hidden lg:block absolute top-42 left-[5%] w-11/12 h-[500px] bg-primary rounded-full filter blur-[72px] opacity-40 -z-10"
+    >
+    </motion.div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background to-80% z-30" />
+</motion.div>

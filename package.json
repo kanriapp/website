@@ -14,6 +14,7 @@
     "@astrojs/sitemap": "^3.1.5",
     "@astrojs/starlight": "^0.24.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/bi": "^1.1.24",
     "@iconify-json/lucide": "^1.1.206",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/react": "^18.3.3",

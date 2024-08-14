@@ -1,0 +1,159 @@
+---
+import { motion } from "framer-motion"
+import { Icon } from "astro-icon/components"
+---
+
+<section class="w-full mt-48 md:mt-20 lg:mt-0 py-12 md:pb-24 lg:pb-32 xl:pb-48 bg-card z-50">
+  <div class="relative">
+        <div class="container space-y-12 px-4 md:px-6 relative">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                client:load
+                className="flex flex-col items-start md:items-center justify-center space-y-4 text-left md:text-center"
+            >
+                <div class="space-y-2 mb-8">
+                    <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-5xl">What's Under the Hood</h2>
+                    <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Kanri is packed with powerful features to help you stay organized and productive.
+                    </p>
+                </div>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                client:load
+                className="mx-auto grid max-w-6xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3"
+            >
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:layout-dashboard" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Kanban Board</h3>
+                            <p class="text-sm text-muted-foreground">Organize your tasks with a customizable Kanban board.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:file-text" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Rich Text Support</h3>
+                            <p class="text-sm text-muted-foreground">
+                            Write task descriptions and notes using formatting similar to Markdown.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    viewport={{ once: true }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:wifi-off" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Offline Support</h3>
+                            <p class="text-sm text-muted-foreground">Work offline with local storage. Your data stays private as JSON files, and no internet is needed.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    viewport={{ once: true }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:palette" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Customizable Themes</h3>
+                            <p class="text-sm text-muted-foreground">
+                            Choose from light and dark themes or create your own custom theme.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.7 }}
+                    viewport={{ once: true }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:keyboard" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Keyboard Shortcuts</h3>
+                            <p class="text-sm text-muted-foreground">
+                            Improve productivity with built-in keyboard shortcuts.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
+                    viewport={{ once: true }}
+                    client:load
+                    className="grid gap-4"
+                >
+                    <div class="bg-card rounded-lg p-4 flex items-start gap-4">
+                        <div class="bg-primary rounded-md p-3 flex items-center justify-center">
+                            <Icon name="lucide:download" class="w-6 h-6 text-primary-foreground" />
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Data Export</h3>
+                            <p class="text-sm text-muted-foreground">
+                            Export your data to JSON for backup or migration purposes.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
+        </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.6 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            client:load
+            className="hidden lg:block absolute top-24 left-[22%] w-[800px] h-[40px] bg-blue-500 rounded-full filter blur-3xl opacity-40"
+        >
+        </motion.div>
+  </div>
+</section>

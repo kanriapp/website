@@ -1,3 +1,54 @@
 ---
+import KanriIcon from "@/components/icons/KanriIcon.astro";
+import { Icon } from "astro-icon/components";
 
 ---
+
+<footer class="p-6 md:pt-12 pb-8 w-full bg-background/60 backdrop-blur-lg z-50">
+    <div class="container max-w-7xl grid grid-cols-4 sm:grid-cols-8 gap-2 text-sm">
+      <div class="col-span-2 sm:col-span-6 flex flex-col gap-2">
+        <a href="#" class="flex items-start gap-2">
+            <KanriIcon classes="h-6 w-6" />
+            <span class="font-bold text-xl">Kanri</span>
+        </a>
+        <p class="text-muted-foreground max-w-lg">Kanri is a simple and modern offline Kanban board app for Windows, Mac and Linux. It is an offline alternative to Trello® and aims to provide a simple Kanban board offline experience.</p>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-bold">Pages</h3>
+        <a href="/" class="text-muted-foreground">Home</a>
+        <a href="/about" class="text-muted-foreground">About</a>
+        <a href="/contact" class="text-muted-foreground">Contact</a>
+      </div>
+      <div class="grid gap-1">
+        <h3 class="font-bold">Resources</h3>
+        <a href="/blog" class="text-muted-foreground">Blog</a>
+        <a href="/getting-started/what-is-kanri" class="text-muted-foreground">Documentation</a>
+        <a href="/support" class="text-muted-foreground">Support</a>
+      </div>
+    </div>
+    <div class="container max-w-7xl mt-10 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+      <div>© 2022-2024 Kanri Team. All rights reserved.</div>
+        <div class="flex items-center gap-4">
+            <a href="#" aria-label="GitHub">
+            <Icon name="bi:github" class="w-5 h-5" />
+            </a>
+            <a href="#" aria-label="Discord">
+            <Icon name="bi:discord" class="w-5 h-5" />
+            </a>
+            <div class="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full">
+            <button id="light-theme" aria-label="Switch to light mode" class="p-2 rounded-l-full hover:bg-gray-300 dark:hover:bg-gray-600">
+                <Icon name="lucide:sun" class="w-5 h-5" />
+            </button>
+            <button id="dark-theme" aria-label="Switch to dark mode" class="p-2 rounded-r-full hover:bg-gray-300 dark:hover:bg-gray-600">
+                <Icon name="lucide:moon" class="w-5 h-5" />
+            </button>   
+        </div>
+    </div>
+  </footer>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>

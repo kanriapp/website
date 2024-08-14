@@ -1,0 +1,79 @@
+---
+import { motion } from "framer-motion";
+import KanriIcon from "@/components/icons/KanriIcon.astro";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+---
+
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.5 }}
+  client:load
+>
+  <motion.section
+      className="py-16 md:py-24 mb-24 z-20 pointer-events-auto relative"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      client:load
+  >
+        <div class="container px-4 md:px-6 z-50 pointer-events-auto">
+            <motion.div
+              className="flex flex-col items-center text-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              client:load
+            >
+                <KanriIcon classes="w-20 h-20 text-primary mb-8" />
+    
+                <motion.h2
+                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  viewport={{ once: true }}
+                  client:load
+                >
+                  Ready to Simplify Your Workflow?
+                </motion.h2>
+                <motion.p
+                  className="mt-4 max-w-2xl text-muted-foreground md:text-xl"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  client:load
+                >
+                    Jump right in - no setup needed! Kanri's simplicity lets you start managing tasks instantly. Try it now and streamline your workflow today!
+                </motion.p>
+                <motion.div
+                  className="mt-12 flex flex-col gap-4 min-[400px]:flex-row"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
+                  viewport={{ once: true }}
+                  client:load
+                >
+                    <a
+                        class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                        href="#"
+                    >
+                        Download Kanri
+                    </a>
+                    <a
+                        class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                        href="#"
+                    >
+                        Join Our Community
+                    </a>
+                </motion.div>
+            </motion.div>
+        </div>
+        <div class="absolute -bottom-24 left-0 right-0 h-[400px] overflow-hidden pointer-events-none">
+            <AuroraBackground client:load> </AuroraBackground>
+        </div>
+  </motion.section>
+</motion.div>
