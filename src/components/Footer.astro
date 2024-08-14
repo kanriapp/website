@@ -36,19 +36,7 @@ import { Icon } from "astro-icon/components";
             <Icon name="bi:discord" class="w-5 h-5" />
             </a>
             <div class="flex items-center bg-gray-200 dark:bg-gray-700 rounded-full">
-            <button id="light-theme" aria-label="Switch to light mode" class="p-2 rounded-l-full hover:bg-gray-300 dark:hover:bg-gray-600">
-                <Icon name="lucide:sun" class="w-5 h-5" />
-            </button>
-            <button id="dark-theme" aria-label="Switch to dark mode" class="p-2 rounded-r-full hover:bg-gray-300 dark:hover:bg-gray-600">
-                <Icon name="lucide:moon" class="w-5 h-5" />
-            </button>   
         </div>
     </div>
-  </footer>
+</footer>
 
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-  });
-</script>
