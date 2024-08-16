@@ -3,5 +3,80 @@ import BaseLayout from "@/layouts/BaseLayout.astro"
 ---
 
 <BaseLayout>
-    <div class="min-h-screen pt-32 px-8">work in progress</div>
+    <div class="min-h-screen pt-32 px-8 max-w-4xl mx-auto mb-24">
+        <h1 class="text-4xl font-bold mb-8">About Kanri</h1>
+
+        <p class="mb-6 text-muted-foreground">
+            Kanri is an offline-first Kanban board application designed for personal users and solo/indie developers. Kanri allows you to create, manage, and customize your Kanban boards effortlessly on Windows, macOS, and Linux. What sets Kanri apart is its offline functionality, ensuring that your data stays on your device without the need for an internet connection or tracking. It's 100% free and open source, prioritizing simplicity, privacy, and an excellent user experience.
+        </p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">The Vision Behind Kanri</h2>
+        <p class="mb-6 text-muted-foreground">
+            Kanri was built with the belief that productivity tools should enhance your workflow without compromising privacy or overwhelming you with unnecessary features. Kanri's offline-first approach ensures that you're always in control of your data, no matter your connectivity status. It's designed with personal users in mind, giving you a tool that's both powerful and easy to use.
+        </p>
+        
+        <h3 class="text-2xl font-semibold mt-8 mb-4">Key Principles of Kanri</h3>
+        <p class="mb-4 text-muted-foreground"><strong>Offline First:</strong> Kanri's offline-first design allows you to manage your tasks and projects without an internet connection. This ensures that connectivity issues never disrupt your productivity.</p>
+        <p class="mb-4 text-muted-foreground"><strong>Privacy-Focused:</strong> Your data stays on your computer, and we do not track your usage or collect any personal information. Kanri is built to prioritize your privacy.</p>
+        <p class="mb-4 text-muted-foreground"><strong>Simplicity:</strong> Kanri is designed with simplicity in mind. Its clean and intuitive interface makes task management straightforward and effective, without unnecessary complexity or bloat.</p>
+        <p class="mb-4 text-muted-foreground"><strong>User Experience:</strong> The user experience is at the core of Kanri's design. Every feature and interaction is carefully crafted to make the app enjoyable and accessible to users of all skill levels.</p>
+        <p class="mb-4 text-muted-foreground"><strong>Minimalist Approach:</strong> We focus on features that truly enhance your productivity. By avoiding feature overload, we keep the user interface uncluttered and efficient.</p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">Robust Tech Stack</h2>
+        <p class="mb-4 text-muted-foreground">
+            Kanri leverages a strong technology stack to ensure smooth performance and a great user experience:
+        </p>
+        <ul class="list-disc pl-6 mb-6 text-muted-foreground">
+            <li class="mb-2"><strong>Tauri:</strong> Kanri uses Tauri to deliver flawless offline functionality on all major operating systems: Windows, macOS, and Linux.</li>
+            <li class="mb-2"><strong>Nuxt.js v3:</strong> Nuxt.js v3 provides a responsive and adaptable interface that makes Kanri both fast and user-friendly.</li>
+            <li class="mb-2"><strong>Tailwind CSS:</strong> The sleek design and usability of Kanri are powered by TailwindCSS, ensuring that the app is both visually appealing and functional.</li>
+        </ul>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">Import and Export Capabilities</h2>
+        <p class="mb-6 text-muted-foreground">
+            Kanri enables you to back up individual boards or all of your data, ensuring your information stays safe. You can also import data from other Kanban apps like Trello™ or KanbanElectron, making it easy to transition to Kanri.
+        </p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">The Kanri Philosophy</h2>
+        <p class="mb-4 text-muted-foreground">
+            Kanri embodies a philosophy centered around simplicity, privacy, and a dedication to improving user experience. We believe that productivity tools should empower you, protect your privacy, and remain intuitive and easy to use.
+        </p>
+        <p class="mb-6 text-muted-foreground">
+            In a world filled with digital tools that often come with intrusive tracking and unnecessary complexity, Kanri is an alternative that remains true to its core values. Our app will always be offline, private, and user-focused. We want productivity to be about you, your tasks, and a smooth workflow. Kanri helps you achieve that goal.
+        </p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">Behind the Name "Kanri"</h2>
+        <p class="mb-4 text-muted-foreground">
+            The name "Kanri" is a blend of various inspirations that reflect the purpose and values of the app. It combines traditional productivity principles with modern technology. The "Kan" in Kanri is derived from "Kanban," a productivity method that visualizes workflows using boards, columns, and cards. This reflects Kanri's focus on streamlining personal task management.
+        </p>
+        <p class="mb-4 text-muted-foreground">
+            The "ri" in Kanri is a nod to "Tauri," the framework that powers Kanri's offline capabilities. Tauri allows Kanri to function as a desktop app on multiple operating systems, including Windows, Linux, and macOS. Additionally, the term "Kanri" in Japanese translates to "management" or "control," symbolizing the app's mission to empower users to take control of their workflow.
+        </p>
+        <p class="mb-6 text-muted-foreground">
+            Another source of inspiration is the "Hoshin Kanri" planning method, a strategic approach from Japan that emphasizes goal alignment and continuous improvement. In a similar way, Kanri encourages users to set objectives, prioritize tasks, and work toward their goals effectively.
+        </p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">The Future of Kanri (Roadmap)</h2>
+        <p class="mb-4 text-muted-foreground">
+            Kanri's development roadmap focuses on enhancing functionality, improving user experience, and expanding its feature set. Our goals for the future include:
+        </p>
+        <ul class="list-disc pl-6 mb-6 text-muted-foreground">
+            <li class="mb-2">Continuously improving existing features while avoiding technical debt.</li>
+            <li class="mb-2">Adding impactful features such as reminders and sub-tasks.</li>
+            <li class="mb-2">Working towards a 1.0 release with key features like internationalization and widget panels.</li>
+            <li class="mb-2">Exploring the possibility of cloud sync with collaboration options, potentially self-hosted or managed by the developer.</li>
+        </ul>
+        <p class="mb-6 text-muted-foreground">
+            For more details, check out our roadmap on GitHub: <a href="https://github.com/users/trobonox/projects/1" class="text-blue-600 hover:underline">Kanri Roadmap</a>.
+        </p>
+        
+        <h2 class="text-3xl font-semibold mt-10 mb-4">About the Creator</h2>
+        <p class="mb-4 text-muted-foreground">
+            Hi, I'm Trobo (also known as Trobonox), a passionate hobbyist developer and student. I created Kanri because, as a fan of Kanban, I couldn't find an offline app that suited my needs for storing confidential data locally. This project began with a request from a community member who saw my previous work on a Kanban web app. From there, I developed the original version, KanbanElectron, and later rewrote the app using Tauri to enhance its capabilities.
+        </p>
+        <p class="mb-6 text-muted-foreground">
+            I'm grateful for the support and interest in this project and look forward to continuing to develop Kanri for all users. If you have any feature requests or want to contribute to the project, feel free to reach out.
+        </p>
+        
+    </div>
 </BaseLayout>

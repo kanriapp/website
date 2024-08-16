@@ -1,7 +1,61 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro"
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from 'astro-icon/components';
+import { buttonVariants } from "@/components/ui/button";
 ---
 
-<BaseLayout>
-    <div class="min-h-screen pt-32 px-8">work in progress</div>
+<BaseLayout title="Download Kanri" description="Kanri is an offline Kanban board application for Windows, macOS and Linux, built with simplicity and user experience in mind.">
+    <div class="min-h-screen pt-32 px-8 max-w-4xl mx-auto mb-24">
+        <h1 class="text-4xl font-bold mb-6">Download Kanri</h1>
+        <p class="mb-8 text-muted-foreground">Select your operating system to download Kanri, an offline Kanban board application built with simplicity and user experience in mind.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_x64_en-US.msi" class={buttonVariants({ class: "flex items-center justify-center gap-2" })}>
+                <Icon name="mdi:microsoft-windows" class="w-6 h-6" />
+                Download for Windows
+            </a>
+            <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_amd64.AppImage" class={buttonVariants({ class: "flex items-center justify-center gap-2" })}>
+                <Icon name="mdi:linux" class="w-6 h-6" />
+                Download for Linux (x86-64 AppImage)
+            </a>
+            <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_x64.dmg" class={buttonVariants({ class: "flex items-center justify-center gap-2" })}>
+                <Icon name="mdi:apple" class="w-6 h-6" />
+                Download for macOS (Intel)
+            </a>
+            <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_aarch64.dmg" class={buttonVariants({ class: "flex items-center justify-center gap-2" })}>
+                <Icon name="mdi:apple" class="w-6 h-6" />
+                Download for macOS (Apple Silicon)
+            </a>
+        </div>
+
+        <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg mb-12">
+            <h2 class="text-2xl font-semibold mb-4">macOS Apple Silicon Users</h2>
+            <p class="mb-4">If you receive an error about the app being broken, please run this command in the Terminal:</p>
+            <pre class="bg-gray-200 dark:bg-gray-800 p-3 rounded"><code>xattr -cr /Applications/kanri.app</code></pre>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Install using Homebrew (macOS)</h2>
+            <pre class="bg-gray-200 dark:bg-gray-800 p-3 rounded"><code>brew tap trobonox/cask
+brew install kanri</code></pre>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">Special Editions (Debian/Ubuntu)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_amd64.deb" class={buttonVariants({ variant: "outline", class: "flex items-center justify-center gap-2" })}>
+                    <Icon name="mdi:debian" class="w-6 h-6" />
+                    Debian/Ubuntu (x86-64)
+                </a>
+                <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_arm64.deb" class={buttonVariants({ variant: "outline", class: "flex items-center justify-center gap-2" })}>
+                    <Icon name="mdi:debian" class="w-6 h-6" />
+                    Debian/Ubuntu (arm64)
+                </a>
+                <a href="https://github.com/trobonox/kanri/releases/download/app-v0.7.1/kanri_0.7.1_armhf.deb" class={buttonVariants({ variant: "outline", class: "flex items-center justify-center gap-2" })}>
+                    <Icon name="mdi:debian" class="w-6 h-6" />
+                    Debian/Ubuntu (armhf)
+                </a>
+            </div>
+        </div>
+    </div>
 </BaseLayout>

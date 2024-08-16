@@ -16,6 +16,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/bi": "^1.1.24",
     "@iconify-json/lucide": "^1.1.206",
+    "@iconify-json/mdi": "^1.1.68",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
