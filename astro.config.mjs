@@ -5,8 +5,8 @@ import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-const site = "https://www.kanriapp.com/";
 
+const site = "https://www.kanriapp.com/";
 
 // https://astro.build/config
 export default defineConfig({
