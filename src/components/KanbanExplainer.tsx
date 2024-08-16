@@ -47,7 +47,7 @@ export default function Component() {
         </div>
         <div className="relative">
           <motion.div
-            className="absolute inset-0 bg-gradient-to-r w-[600px] h-[400px] from-blue-600 to-primary rounded-xl blur-3xl opacity-30"
+            className="hidden lg:block absolute inset-0 bg-gradient-to-r w-[600px] h-[400px] from-blue-600 to-primary rounded-xl blur-3xl opacity-30"
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.3 }}
             transition={{ duration: 0.5 }}
