@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon/components'
 import KanriIcon from "./icons/KanriIcon.astro";
 
 import { buttonVariants } from "@/components/ui/button"
+import MobileSheet from "@/components/MobileSheet"
 
 const { title } = Astro.props;
 ---
@@ -13,7 +14,7 @@ const { title } = Astro.props;
             <KanriIcon classes="size-6" />
             <h1 class="font-bold text-xl">{title}</h1>
         </a>
-        <div class="flex flex-row items-center gap-6">
+        <div class="hidden md:flex flex-row items-center gap-6">
             <div class="flex flex-row items-center gap-6 text-card-foreground">
                 <a href="/getting-started/what-is-kanri" class="hover:text-primary transition-colors duration-300">
                     Docs
@@ -33,5 +34,6 @@ const { title } = Astro.props;
                 </a>
             </div>
         </div>
+        <MobileSheet client:load />
     </nav>
 </header>

@@ -5,8 +5,8 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer class="p-6 md:pt-12 pb-8 w-full bg-background/60 backdrop-blur-lg z-50">
-    <div class="container max-w-7xl grid grid-cols-4 sm:grid-cols-8 gap-2 text-sm">
-      <div class="col-span-2 sm:col-span-6 flex flex-col gap-2">
+    <div class="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+      <div class="col-span-1 sm:col-span-2 md:col-span-2 flex flex-col gap-2">
         <a href="#" class="flex items-start gap-2">
             <KanriIcon classes="h-6 w-6" />
             <span class="font-bold text-xl">Kanri</span>
@@ -26,8 +26,8 @@ import { Icon } from "astro-icon/components";
         <a href="/support" class="text-muted-foreground">Support</a>
       </div>
     </div>
-    <div class="container max-w-7xl mt-10 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
-      <div>© 2022-2024 Kanri Team. All rights reserved.</div>
+    <div class="container max-w-7xl mt-10 text-sm text-gray-500 dark:text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="text-center sm:text-left">© 2022-2024 Kanri Team. All rights reserved.</div>
         <div class="flex items-center gap-4">
             <a href="https://github.com/trobonox/kanri" aria-label="GitHub">
             <Icon name="bi:github" class="w-5 h-5" />
@@ -39,4 +39,3 @@ import { Icon } from "astro-icon/components";
         </div>
     </div>
 </footer>
-
