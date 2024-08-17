@@ -1,0 +1,45 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+  };
+}
+const {
+  content: { title, description, pubDate, updatedDate, heroImage },
+} = Astro.props;
+---
+
+<BaseLayout>
+  <main class="min-h-screen pt-32 px-8 max-w-4xl mx-auto mb-24">
+    <article>
+      <h1 class="font-bold text-5xl mb-4">{title}</h1>
+      <p class="text-lg mb-4 text-gray-200">{description}</p>
+      <div class="text-gray-300 mb-8">
+        {pubDate && <time class="text-muted-foreground">Published on: {new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>}
+        {updatedDate && (
+          <div class="mt-2">
+            Last updated on: <time>{new Date(updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+          </div>
+        )}
+      </div>
+      {heroImage && (
+        <img
+          width={"100%"}
+          src={heroImage}
+          alt=""
+          class="rounded-3xl mb-8 aspect-[21/9] object-cover h-96"
+        />
+      )}
+      <div
+        class="w-full max-w-screen-2xl prose prose-invert prose-h1:mt-16 lg:prose-lg lg:prose-h1:mb-4 lg:prose-h2:mb-3 prose-headings:mt-6 prose-p:mt-2 prose-p:mb-4 prose-img:mb-6 prose-code:before:content-none prose-code:after:content-none prose-code:bg-gray-700 prose-code:rounded-md prose-code:text-gray-50 prose-code:font-mono prose-code:p-1 prose-code:font-medium text-muted-foreground"
+      >
+        <slot />
+      </div>
+    </article>
+  </main>
+</BaseLayout>

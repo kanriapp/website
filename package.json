@@ -10,8 +10,6 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.5",
     "@astrojs/starlight": "^0.24.2",
@@ -19,6 +17,9 @@
     "@iconify-json/bi": "^1.1.24",
     "@iconify-json/lucide": "^1.1.206",
     "@iconify-json/mdi": "^1.1.68",
+    "@tailwindcss/typography": "^0.5.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "astro": "^4.10.2",
     "astro-icon": "^1.1.0",
     "astro-robots-txt": "^1.0.0",
