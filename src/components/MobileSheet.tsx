@@ -13,6 +13,9 @@ export default function MobileSheet ()  {
                     <a href="/getting-started/what-is-kanri" className="hover:text-primary transition-colors duration-300">
                         Docs
                     </a>
+                    <a href="/blog" className="hover:text-primary transition-colors duration-300">
+                        Blog
+                    </a>
                     <a href="/about" className="hover:text-primary transition-colors duration-300">
                         About
                     </a>
