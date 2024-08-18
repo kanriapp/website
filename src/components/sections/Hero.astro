@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
     <motion.div
         className="text-5xl lg:text-[4.25rem] font-bold tracking-tight mb-4 mt-12 lg:mt-0"
         initial={{ y: -25, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         client:load
     >
@@ -20,7 +20,7 @@ import { motion } from "framer-motion"
     <motion.p
         className="text-gray-400 text-lg lg:text-xl max-w-xl lg:max-w-2xl inline-block text-left md:text-center"
         initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
         client:load
     >
@@ -30,7 +30,7 @@ import { motion } from "framer-motion"
     <motion.div
         className="flex flex-row items-center gap-2 mt-10"
         initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         client:load
     >
@@ -57,7 +57,7 @@ import { motion } from "framer-motion"
 <motion.div
     className="hidden md:flex justify-center relative overflow-hidden pt-24 lg:pt-32"
     initial={{ y: 50, opacity: 0, zIndex: 30 }}
-    animate={{ y: 0, opacity: 1, zIndex: 30 }}
+    whileInView={{ y: 0, opacity: 1, zIndex: 30 }}
     transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
     client:load
 >
@@ -69,7 +69,7 @@ import { motion } from "framer-motion"
 
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 0.6 }}
+      whileInView={{ opacity: 0.6 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
       client:load
       className="hidden lg:block absolute top-42 left-[5%] w-11/12 h-[500px] bg-primary rounded-full filter blur-[72px] opacity-40 -z-10"
