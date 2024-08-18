@@ -38,10 +38,12 @@ import { motion } from "framer-motion"
             <Icon class="size-4 mr-2" name="lucide:download" />
             <span class="font-bold">Download Kanri</span>
         </a>
-        <a href="/getting-started/what-is-kanri"  class={buttonVariants({ variant: "secondary", size: "lg" })}>
-            <Icon class="size-4 mr-2" name="lucide:book" />
-            Read Docs
-        </a>
+        <div class="hidden md:block">
+            <a href="/getting-started/what-is-kanri"  class={buttonVariants({ variant: "secondary", size: "lg" })}>
+                <Icon class="size-4 mr-2" name="lucide:book" />
+                Read Docs
+            </a>
+        </div>
     </motion.div>
 </div>
 
