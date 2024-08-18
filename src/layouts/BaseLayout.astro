@@ -6,12 +6,14 @@ import "@/styles/globals.css"
 
 const SITE_TITLE = "Kanri - Your Personal Offline Kanban Board App"
 const SITE_DESCRIPTION = "Kanri is the last personal Kanban app you need. Fully offline, free and open source. It respects your privacy while providing a modern and simple experience."
+
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={title ?? SITE_TITLE} description={description ?? SITE_DESCRIPTION} />
   </head>
   <body class="dark">
     <div

@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout title={title + " | Kanri"} description={description}>
   <main class="min-h-screen pt-32 px-8 max-w-4xl mx-auto mb-24">
     <article>
       <h1 class="font-bold text-5xl mb-4">{title}</h1>

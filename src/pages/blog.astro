@@ -6,7 +6,7 @@ const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
-<BaseLayout>
+<BaseLayout title="Kanri Blog">
     <div class="min-h-screen pt-32 px-8 max-w-4xl mx-auto mb-24">
         <h1 class="text-4xl font-bold mb-4">Blog</h1>
         <p class="mb-8 text-muted-foreground">
