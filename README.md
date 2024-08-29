@@ -1,4 +1,5 @@
 # Kanri website
+TODO: Move repo to kanriapp org
 
 ```
 npm create astro@latest -- --template starlight
