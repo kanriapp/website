@@ -1,0 +1,10 @@
+---
+import { buttonVariants } from "@/components/ui/button"
+
+import { Icon } from "astro-icon/components"
+---
+
+<a href="/download" class={buttonVariants({ variant: "default", size: "lg" })}>
+    <Icon class="size-4 mr-2" name="lucide:download" />
+    <span class="font-bold">Try Out Kanri</span>
+</a>
