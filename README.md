@@ -1,5 +1,6 @@
 # Kanri website
-TODO: Move repo to kanriapp org
+
+The official Kanri website, built with Astro, TailwindCSS, shadcn/ui, Framer Motion and Starlight for the documentation.
 
 ```
 npm create astro@latest -- --template starlight
