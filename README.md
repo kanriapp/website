@@ -1,19 +1,24 @@
-# Kanri website
+![website_repo_banner](https://github.com/user-attachments/assets/5b623565-1ee8-4e8e-a93c-7981882b4d6a)
 
-The official Kanri website, built with Astro, TailwindCSS, shadcn/ui, Framer Motion and Starlight for the documentation.
+The official website for Kanri, featuring the landing page and documentation.
 
-```
-npm create astro@latest -- --template starlight
-```
+## Preview
+![website screenshot](https://github.com/user-attachments/assets/20c20f09-347e-4a45-b1b4-e3e41b6f046b)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tech Stack
 
-## 🚀 Project Structure
+The Kanri website is built using the following technologies:
+- **Astro** and **Starlight**: Framework for building the site and documentation.
+- **TailwindCSS**: Utility-first CSS framework for styling.
+- **shadcn/ui**: Component library for building the user interface.
+- **Framer Motion**: Library for animations and transitions.
+- **TypeScript**: Adding static types to JavaScript.
+- **MDX**: Markdown for writing content with embedded React components.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Project Structure
+
+Inside the project, you'll see the following folders and files:
 
 ```
 .
@@ -29,13 +34,14 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+- **`public/`**: Static assets like favicons.
+- **`src/assets/`**: Images and other assets embedded in Markdown.
+- **`src/content/docs/`**: Documentation files in `.md` or `.mdx` format.
+- **`astro.config.mjs`**: Configuration for Astro.
+- **`package.json`**: Project metadata and dependencies.
+- **`tsconfig.json`**: TypeScript configuration.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -43,11 +49,10 @@ All commands are run from the root of the project, from a terminal:
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run build`           | Builds the production site to `./dist/`          |
+| `npm run preview`         | Previews your build locally, before deploying    |
 
-## 👀 Want to learn more?
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## Want to Learn More?
+
+Check out the [Kanri Discord server](https://discord.gg/AVqHrvxB9C) for more information.
