@@ -8,6 +8,6 @@ It is built to be a simple and modern application providing you with a basic Kan
 
 ![screenshot](/kanri_screenshot.webp)
 
-The app is being built and maintaned by [Trobo](https://trobo.tech). For personal inquiries please send a mail to hello@trobo.tech. For support or feature requests please open an issue on GitHub or write an email to support@kanriapp.com.
+The app is being built and maintaned by the Kanri Team, a small team of open source contributors. For personal inquiries to the original creator please send a mail to trobo@kanriapp.com. For support or feature requests please open an issue on GitHub or write an email to support@kanriapp.com.
 
 You can find more information [on the project's GitHub page](https://github.com) and see planned features [on the roadmap](https://github.com/users/trobonox/projects/1/views/1).
