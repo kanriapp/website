@@ -4,7 +4,7 @@ description: A list of frequently asked questions and the answers to them
 ---
 
 ## I am getting an error about the app being unsafe! Is Kanri safe?
-Don't worry! You are receiving this error because Kanri was not signed with a digital signing certificate, primarily because it costs a considerable sum of money. Because Kanri does not generate any revenue, these certificates cannot be afforded for now. If you want to be 100% certain about Kanri's safety, feel free to scan the executable with a known tool such as VirusTotal.com. The lastest version 0.7.1 has 0 detections, meaning that all antivirus engines used by VirusTotal classify Kanri as safe.
+Don't worry! You are receiving this error because Kanri was not signed with a digital signing certificate, primarily because it costs a considerable sum of money. Because Kanri does not generate any revenue, these certificates cannot be afforded for now. If you want to be 100% certain about Kanri's safety, feel free to scan the executable with a known tool such as VirusTotal.com. The lastest version 0.8.0 has 0 detections, meaning that all antivirus engines used by VirusTotal classify Kanri as safe.
 
 ## When is collaboration/cloud sync functionality coming to the app?
 This functionality is planned but since the app started out as offline-only, it is not a priority to implement online sync capabilities until after version 1.0.
