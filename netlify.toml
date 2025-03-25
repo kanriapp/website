@@ -2,4 +2,4 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
-    Content-Security-Policy = "default-src 'self'; frame-ancestors 'none';"
+    Content-Security-Policy = "default-src 'self'; frame-ancestors 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline';"
