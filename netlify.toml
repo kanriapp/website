@@ -2,3 +2,4 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self'; frame-ancestors 'none';"
