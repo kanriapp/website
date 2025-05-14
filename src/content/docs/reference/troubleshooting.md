@@ -8,6 +8,19 @@ If you do not find the bug or issue you encounter in this list, you can open an 
 
 Furthermore, it is generally advised to regulary export your data from the import/export menu as a backup to prevent data loss.
 
+## The Kanri window is not showing up at all
+
+In some cases, when opening Kanri the window might not appear. This is a rare bug which only happens very rarely and should be easy to fix.
+Please navigate to the following location, based on your operating system:
+```
+Windows: %appdata%\tech.trobonox.kanri\
+Linux: /home/USER/.local/share/tech.trobonox.kanri/
+macOS: ${HOME}/Library/Application Support/tech.trobonox.kanri/
+```
+In this folder, there should be a file named `window-state.json'. Delete this file permanently (it is not essential and should cause no other data loss).
+
+If Kanri is still running (e.g. is still being displayed in the Task Manager or Activity Monitor), please close it. After reopening Kanri, the application window should now appear as usual.
+
 ## Custom board background disappeared
 
 Your background disappearing is not an uncommon issue, so don't worry. The fix is just resetting your background and adding it again.
