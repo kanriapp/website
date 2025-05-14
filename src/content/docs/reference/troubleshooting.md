@@ -17,7 +17,7 @@ Windows: %appdata%\tech.trobonox.kanri\
 Linux: /home/USER/.local/share/tech.trobonox.kanri/
 macOS: ${HOME}/Library/Application Support/tech.trobonox.kanri/
 ```
-In this folder, there should be a file named `window-state.json'. Delete this file permanently (it is not essential and should cause no other data loss).
+In this folder, there should be a file named `window-state.json`. Delete this file permanently (it is not essential and should cause no other data loss).
 
 If Kanri is still running (e.g. is still being displayed in the Task Manager or Activity Monitor), please close it. After reopening Kanri, the application window should now appear as usual.
 
