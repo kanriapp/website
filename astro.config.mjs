@@ -19,10 +19,10 @@ export default defineConfig({
         dark: "/src/assets/kanri_logo.svg",
         replacesTitle: false,
       },
-      social: {
-        github: "https://github.com/trobonox/kanri",
-        discord: "https://discord.gg/AVqHrvxB9C",
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/trobonox/kanri' },
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/AVqHrvxB9C' },
+      ],
       editLink: {
         baseUrl: "https://github.com/trobonox/kanri-website/tree/main",
       },
