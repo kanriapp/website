@@ -20,7 +20,7 @@ export default defineConfig({
         replacesTitle: false,
       },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/trobonox/kanri' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/kanriapp/kanri' },
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/AVqHrvxB9C' },
       ],
       editLink: {
