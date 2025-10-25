@@ -7,8 +7,9 @@ description: A list of frequently asked questions and the answers to them
 Don't worry! You are receiving this error because Kanri was not signed with a digital signing certificate, primarily because it costs a considerable sum of money. Because Kanri does not generate any revenue, these certificates cannot be afforded for now. If you want to be 100% certain about Kanri's safety, feel free to scan the executable with a known tool such as VirusTotal.com. The lastest version 0.8.2 has 0 detections, meaning that all antivirus engines used by VirusTotal classify Kanri as safe.
 
 ## When is collaboration/cloud sync functionality coming to the app?
-This functionality is planned but since the app started out as offline-only, it is not a priority to implement online sync capabilities until after version 1.0.
-The app is built by a solo developer in their free time, which means that progress might be slow at times.
+This functionality is planned, but only in an indirect way. Kanri is built to protect your privacy and give you full control over your data, so the current implementation plan is to allow storing individual boards in a custom location, such as a folder synced with Nextcloud, NAS storage or any other service of your choice. This feature will allow for synchronization between devices while still giving you full control over your data.
+
+In the near future, it is not planned for Kanri to receive it's own sync service.
 
 ## Where is my data saved? Can I change the location?
 Under the hood, Kanri uses `tauri-plugin-store` to store all data in a local JSON file.
